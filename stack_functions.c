@@ -131,7 +131,8 @@ void f_swap(stack_t **head, unsigned int counter)
 }
 
 /**
- * f_add - function taht adds the top two elements of the stack.
+ * f_add - function taht adds the
+ *top two elements of the stack.
  * @head: stack head
  * @counter: line_number
  * Return: void
