@@ -1,6 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define _POSIX_C_SOURCE 200809L
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -52,11 +54,11 @@ extern jet_t jet;
  * for stack, queues, LIFO, FIFO Holberton project
  */
 
-typedef struct executors_s
+typedef struct instruction_s
 {
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
-} executors_t;
+} instruction_t;
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
